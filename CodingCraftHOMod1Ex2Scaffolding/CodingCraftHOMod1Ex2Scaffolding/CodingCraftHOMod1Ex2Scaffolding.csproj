@@ -203,11 +203,19 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GrupoCategoriasController.cs" />
+    <Compile Include="Controllers\GrupoProdutoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProdutosController.cs" />
+    <Compile Include="Controllers\TagsController.cs" />
+    <Compile Include="Controllers\VendasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607061711357_Init.cs" />
+    <Compile Include="Migrations\201607061711357_Init.Designer.cs">
+      <DependentUpon>201607061711357_Init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -471,6 +479,26 @@
     <Content Include="Views\Shared\EditorTemplates\String.cshtml" />
     <Content Include="Views\Shared\_Layout_InkExample.cshtml" />
     <Content Include="Views\InkExample\Index.cshtml" />
+    <Content Include="Views\Tags\Create.cshtml" />
+    <Content Include="Views\Tags\Delete.cshtml" />
+    <Content Include="Views\Tags\Details.cshtml" />
+    <Content Include="Views\Tags\Edit.cshtml" />
+    <Content Include="Views\Tags\Index.cshtml" />
+    <Content Include="Views\Vendas\Create.cshtml" />
+    <Content Include="Views\Vendas\Delete.cshtml" />
+    <Content Include="Views\Vendas\Details.cshtml" />
+    <Content Include="Views\Vendas\Edit.cshtml" />
+    <Content Include="Views\Vendas\Index.cshtml" />
+    <Content Include="Views\GrupoCategorias\Create.cshtml" />
+    <Content Include="Views\GrupoCategorias\Delete.cshtml" />
+    <Content Include="Views\GrupoCategorias\Details.cshtml" />
+    <Content Include="Views\GrupoCategorias\Edit.cshtml" />
+    <Content Include="Views\GrupoCategorias\Index.cshtml" />
+    <Content Include="Views\GrupoProdutoes\Create.cshtml" />
+    <Content Include="Views\GrupoProdutoes\Delete.cshtml" />
+    <Content Include="Views\GrupoProdutoes\Details.cshtml" />
+    <Content Include="Views\GrupoProdutoes\Edit.cshtml" />
+    <Content Include="Views\GrupoProdutoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -491,6 +519,11 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-2.2.4.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201607061711357_Init.resx">
+      <DependentUpon>201607061711357_Init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -18,7 +18,7 @@ namespace CodingCraftHOMod1Ex2Scaffolding.Models
         [Required]
         public string NomeGrupoProduto { get; set; }
 
-        public List<Produto> Produto { get; set; }
+        public ICollection<Produto> Produto { get; set; }
 
     }
 }

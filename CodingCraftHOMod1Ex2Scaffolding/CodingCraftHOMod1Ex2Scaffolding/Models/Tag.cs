@@ -17,8 +17,10 @@ namespace CodingCraftHOMod1Ex2Scaffolding.Models
         [Required]
         public string TagNome { get; set; }
 
+        public long ProdutoId { get; set; }
 
         // FK relacionar produto com TAG
-        public List<Produto> Produto { get; set; }
+        [ForeignKey("ProdutoId")]
+        public ICollection<Produto> Produto { get; set; }
     }
 }

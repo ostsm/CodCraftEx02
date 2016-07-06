@@ -1,0 +1,26 @@
+﻿@model CodingCraftHOMod1Ex2Scaffolding.Models.GrupoCategoria
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>GrupoCategoria</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeGrupoCategoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeGrupoCategoria)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GrupoCategoriaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

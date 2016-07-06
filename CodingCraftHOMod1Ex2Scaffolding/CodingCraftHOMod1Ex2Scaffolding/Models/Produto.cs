@@ -5,11 +5,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CodingCraftHOMod1Ex2Scaffolding.Models
 {
    /* A loja consistia nas entidades: Produto(com tamanho, cor, estilo da gola, preço e estoque),*/ 
-    [Table("Produtos")]
+    [Table("Produto")]
     public class Produto
     {
         [Key]
         public long ProdutoId { get; set; }
+
+        public long GrupoCategoriaId { get; set; }
+
+        public long GrupoProdutoId { get; set; }
 
         [Required]
         public string Nome { get; set; }
@@ -38,11 +42,11 @@ namespace CodingCraftHOMod1Ex2Scaffolding.Models
         [ForeignKey("GrupoProdutoId")]
         public virtual GrupoProduto GrupoProduto { get; set; }
 
-        public List<Tag> Tag { get; set; }
+        public ICollection<Tag> Tag { get; set; }
 
 
         // Produto poderá ter várias vendas
-        public List<Venda> Venda { get; set; }
+        public ICollection<Venda> Venda { get; set; }
 
 
 

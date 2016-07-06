@@ -16,5 +16,13 @@ namespace CodingCraftHOMod1Ex2Scaffolding.Models
         }
 
         public DbSet<CodingCraftHOMod1Ex2Scaffolding.Models.Produto> Produtos { get; set; }
+
+        public DbSet<CodingCraftHOMod1Ex2Scaffolding.Models.Tag> Tags { get; set; }
+
+        public DbSet<CodingCraftHOMod1Ex2Scaffolding.Models.GrupoCategoria> GrupoCategorias { get; set; }
+
+        public DbSet<CodingCraftHOMod1Ex2Scaffolding.Models.GrupoProduto> GrupoProdutos { get; set; }
+
+        public DbSet<CodingCraftHOMod1Ex2Scaffolding.Models.Venda> Vendas { get; set; }
     }
 }

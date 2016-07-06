@@ -24,6 +24,8 @@ namespace CodingCraftHOMod1Ex2Scaffolding.Models
         [Required]
         public DateTime DtCompra { get; set; }
 
+        public long ProdutoId { get; set; }
+
         [ForeignKey("ProdutoId")]
         public virtual Produto Produto { get; set; }
 
